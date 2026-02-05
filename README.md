@@ -125,6 +125,8 @@ Created an interactive Power BI dashboard for threat monitoring
 
 Demonstrated practical cybersecurity analytics skills
 
+Because the dataset contains limited repeated IP activity, traffic volume was less informative. The analysis therefore focused on anomaly severity and threat frequency, which are commonly used SOC indicators when volume signals are weak.
+
 🚀 Skills Demonstrated
 
 Security log analysis
