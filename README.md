@@ -1,49 +1,69 @@
 🔐 SOC Traffic Analysis & Threat Detection
-Project Overview
+📘 Project Description
 
-This project analyzes web traffic logs to identify suspicious IP addresses. It simulates how a Security Operations Center (SOC) monitors network activity to detect potential cyber threats.
+This project analyzes web traffic logs to identify potentially suspicious IP addresses. It simulates a simplified Security Operations Center (SOC) workflow used to monitor network activity and detect possible threats.
 
-Using Python (pandas) for analysis and Power BI for visualization, the project identifies IPs that may require investigation based on traffic patterns, anomaly scores, and threat indicators.
+The analysis was done using Python for data processing and Power BI for visualization.
 
-Tools Used
+🛠 Tools Used
 
-Python (pandas)
+Python (pandas) – data cleaning and analysis
 
-Power BI
+Power BI – dashboard and visualization
 
-CSV log dataset
+CSV dataset – simulated security logs
 
-What the Project Does
+🔎 Analysis Process
+📥 Data Exploration
 
-Cleans and explores web traffic log data
+The dataset was explored to understand its structure and key variables:
 
-Groups activity by IP address
+IP_Address – source of the request
 
-Calculates metrics like:
+Request_Type – type of HTTP request
 
-total requests
+Response_Time_ms – server response time
 
-average anomaly score
+Anomaly_Score – score indicating unusual behavior
 
-number of threat flags
+Is_Threat – indicates whether a request was flagged
 
-Assigns each IP a risk level (Low, Medium, High)
+📊 IP-Level Aggregation
 
-Dashboard
+To make the data easier to analyze, requests were grouped by IP address.
+For each IP, the following metrics were calculated:
 
-A Power BI dashboard was built to help analysts quickly identify suspicious IP addresses using charts and security metrics.
+Total number of requests
 
-Skills Demonstrated
+Average anomaly score
 
-Security log analysis
+Number of threat events
 
-Data aggregation
+🚨 Detection Logic
 
-Rule-based threat detection
+IPs were considered suspicious if they showed:
 
-Data visualization
+High request volume
 
-Author
+High anomaly scores
+
+One or more threat flags
+
+Each IP was then classified into a risk level: Low, Medium, or High.
+
+📈 Dashboard
+
+A Power BI dashboard was created to visualize the results, including:
+
+Total and suspicious IP counts
+
+IP table with risk levels
+
+Charts showing anomaly scores and traffic patterns
+
+This allows quick identification of IPs that may require investigation.
+
+👤 Author
 
 Emiliano Sandoval
 Aspiring Cybersecurity / SOC Data Analyst
